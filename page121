@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Without xargs
+find . -type f -name *.py -print -exec wc -l {} \+
+
+# With xargs
+find . -type f -name *.py -print | xargs wc -l
+
+exit 0
+
