@@ -1,0 +1,4 @@
+#!/bin/bash
+md5sum *.jpg | awk '{counts[$1]++; names[$1]=names[$1] " " $2} END {for (key in counts) print counts[key] " " key ":" names[key]}'
+exit 0
+
