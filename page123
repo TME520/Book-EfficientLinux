@@ -1,0 +1,7 @@
+#!/bin/bash
+
+ls ./fruits/ | grep -v '.py' | xargs -I XYZ echo XYZ is a nice fruit
+ls ./vegetables/leafy/ | xargs -I ABC echo I think ABC is nicer with vinaigrette
+
+exit 0
+
