@@ -1,0 +1,11 @@
+#!/bin/bash
+
+paste <(echo {1..10}.jpg | sed 's/ /\n/g') \
+      <(echo {0..9}.jpg | sed 's/ /\n/g')
+
+paste <(echo {1..10}.jpg | sed 's/ /\n/g') \
+      <(echo {0..9}.jpg | sed 's/ /\n/g') \
+      | sed 's/^/mv /'
+
+exit 0
+
