@@ -1,0 +1,8 @@
+#!/bin/bash
+# echo 'CDPATH=$HOME' \
+echo '$HOME' \
+$(cd && ls -d */ | sed -e 's@^@$HOME/@' -e 's@/$@@') \
+.. \
+| tr ' ' ':'
+exit 0
+
