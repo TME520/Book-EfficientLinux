@@ -1,0 +1,4 @@
+#!/bin/bash
+diff <(ls *.jpg | cut -d. -f1) <(ls *.txt | cut -d. -f1) | grep '^[<>]' | tr -d '< ' | tr -d '> '
+exit 0
+
