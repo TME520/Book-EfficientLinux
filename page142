@@ -1,0 +1,4 @@
+#!/bin/bash
+paste <(echo -n "it is $(date +%H:%M:%S)" && echo -n " o'clock.") | sed 's/^/Hello, /g'
+exit 0
+
