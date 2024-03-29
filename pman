@@ -1,0 +1,5 @@
+#!/bin/bash
+# Just print matching lines
+grep "$1" ./vault
+exit 0
+
