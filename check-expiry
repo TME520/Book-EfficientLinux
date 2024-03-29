@@ -1,0 +1,6 @@
+#!/bin/bash
+
+expdate=$(date --date $(whois "$1" | grep -i 'registry expiry date:' | awk '{print $4}') +'%Y-%m-%d')
+echo "$expdate	$1"
+exit 0
+
