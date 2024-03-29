@@ -1,0 +1,4 @@
+#!/bin/bash
+awk -F: '$3>=1000 {print $1}' /etc/passwd | xargs -I@ echo "Hi there, @!"
+exit 0
+
